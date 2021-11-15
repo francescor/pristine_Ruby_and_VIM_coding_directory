@@ -1,0 +1,71 @@
+###
+# Configuration file for rubocop
+#
+# usage: `rubocop` in main dir, or just follow live suggestions while coding
+#
+# be sure so have in Gemfile:
+# gem 'rubocop', require: false
+# gem 'rubocop-rails'
+#
+# https://docs.rubocop.org/rubocop-rails/usage.html
+require: rubocop-rails
+#
+# in .rubocop.yml 
+# Most of these are disabling existing cops, primarily
+# due to a smattering of different styles and loose
+# guidlines for contributions.
+#
+# Any of these may be changed.
+
+# https://github.com/testdouble/standard/blob/master/config/base.yml
+#
+# the following necessary to avoid conflicting advices on quotes
+Style/StringLiterals:
+  Enabled: false
+
+#Style/StringLiteralsInInterpolation:
+#  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 180
+
+Metrics/BlockLength:
+  Max: 100
+
+Metrics/MethodLength:
+  Max: 100
+
+Metrics/AbcSize:
+  Max: 45
+
+Metrics/ClassLength:
+  Max: 400
+Metrics/PerceivedComplexity:
+  Max: 40
+Metrics/CyclomaticComplexity:
+  Max: 45
+
+Metrics/ParameterLists:
+  Max: 7
+
+
+# suggested by rubocop --require rubocop-rails
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+# disable Missing top-level module documentation comment
+Style/Documentation:
+    Enabled: false
+
+# false positive
+Rails/UniqueValidationWithoutIndex:
+    Enabled: false
