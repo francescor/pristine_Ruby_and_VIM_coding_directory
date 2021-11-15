@@ -1,4 +1,4 @@
-# Pristing settings for a Ruby $ Vim coding directory
+# Pristing settings for a Ruby & Vim coding directory
 
 Just copy all files you a new directory and
 
