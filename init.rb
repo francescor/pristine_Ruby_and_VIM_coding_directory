@@ -4,10 +4,5 @@ require 'pry'
 
 # require_relative 'classes/person'
 
-binding.pry
-
-g = if a == 2
-      5
-    else
-      24
-    end
+# debugger entry point
+# binding.pry
