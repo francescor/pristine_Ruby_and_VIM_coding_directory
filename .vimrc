@@ -119,3 +119,7 @@ let g:ale_fix_on_save = 1
 " press 'v', then select, then '>'
 set shiftwidth=2
 
+" https://github.com/ntpeters/vim-better-whitespace
+let g:strip_whitespace_on_save=1
+let g:strip_whitespace_confirm=0
+
