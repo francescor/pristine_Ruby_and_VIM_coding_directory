@@ -19,28 +19,7 @@
 
 # vim artifacts
 **.swp
-/config/database.yml
-
-# per secret,
-/config/secrets.yml
-
-# to use different store for production and development
-/config/initializers/session_store.rb
-
-
-# Ignore Figaro's settings: application configuration
-/config/application.yml
 
 # sublime
 /*.sublime-*
-
-# asset
-/public/assets
-
-# Ignore application configuration
-/config/application.yml
-
-
-# Ignore uploaded files in development
-/storage/*
 
